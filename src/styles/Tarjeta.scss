@@ -1,0 +1,10 @@
+.tarjeta{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center; 
+    border: solid 1px black; 
+    width: 350px; 
+    padding: 5px; 
+    border-radius: 20px;
+}
