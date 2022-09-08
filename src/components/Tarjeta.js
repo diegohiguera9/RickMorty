@@ -3,17 +3,17 @@ import '../styles/Tarjeta.scss'
 const Tarjeta = ({ tar }) => {
     let fillColor = '';
 
-    if(tar.status=='Alive'){
+    if(tar.status==='Alive'){
         fillColor = 'green';
-    } else if(tar.status=='Dead'){
+    } else if(tar.status==='Dead'){
         fillColor = 'red';
-    } else if(tar.status=='unknown'){
+    } else if(tar.status==='unknown'){
         fillColor = 'grey';
     }
 
     return (
         <div key={tar.id} className='tarjeta'>
-            <img src={tar.image}></img>
+            <img src={tar.image} alt=":)"></img>
             <div>
                 <h2>{tar.name}</h2>
                 <div className="status">

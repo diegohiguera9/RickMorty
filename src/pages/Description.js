@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 const Description = () => {
     const params = useParams();
@@ -27,7 +27,7 @@ const Description = () => {
                 <div key={post.id}>
                     
                     <h2>{post.name}</h2>
-                    <img src={post.image}></img>
+                    <img src={post.image} alt=':)'></img>
                     <p>{post.species}</p>
                     <p> {post.status}</p>
                     <p>{post.gender}</p>

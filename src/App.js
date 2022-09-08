@@ -2,7 +2,7 @@ import './App.css';
 import Home from './pages/Home';
 import Header from './pages/Header';
 import Description from './pages/Description';
-import { BrowserRouter, Routes, Route, Link, useLocation, Navigate} from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 function App() {
