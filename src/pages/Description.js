@@ -2,15 +2,16 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams} from "react-router-dom";
 
-const params = useParams();
+let paramPrueba = {}
 
 const Description = () => {
-    
+    //const params = useParams();
+    paramPrueba = useParams();
     const [post, setPosts] = useState([])
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        axios.get(`${process.env.REACT_APP_API_PAGE}character/${params.id}`)
+        axios.get(`${process.env.REACT_APP_API_PAGE}character/${paramPrueba.id}`)
             .then(response => {
                 setPosts(response.data)
             })

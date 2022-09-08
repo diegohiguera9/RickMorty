@@ -7,12 +7,12 @@ import '../styles/Home.scss'
 const arrayChar = Array.from({length: 50}, () => Math.floor(Math.random() * 50));
 
 const Home = (props) => {
-
+  
     const [post, setPosts] = useState([])
     const [loading, setLoading] = useState(true)
 
-
     useEffect(() => {
+        
         axios.get(`${process.env.REACT_APP_API_PAGE}character/${arrayChar}`)
             .then(response => {
                 setPosts(response.data)
