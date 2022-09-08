@@ -2,8 +2,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams} from "react-router-dom";
 
+const params = useParams();
+
 const Description = () => {
-    const params = useParams();
+    
     const [post, setPosts] = useState([])
     const [loading, setLoading] = useState(true)
 
